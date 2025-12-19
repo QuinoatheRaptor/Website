@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <h1>The Infinite Coin Flipper</h1>
+
+    <p>A simple C++ program that flips a virtual coin as many times as you want to experiment with empirical probability.</p>
+
+    <h2>Features</h2>
+
+    <p>This code is very simple. Using the rand() method of C++, it generates a 0 or a 1. These numerical outputs are translated to the flips of a coin. The coin flip is in a while loop. The while loop's condition can be changed to determine how many coins you want to flip. The code comes with several variables to keep track of the statistics of your coin flips. It keeps track of how many heads and tails have been flipped as well as the current streak of heads or tails in a row. From these variables the code derives what percentage of your flips are heads and which are tails as well as what the longest streak of heads and tails is. After every flip the code prints all current data to the terminal. The logic of this program could be easily applied to other equal probability scenarios like dice rolling.</p>
+
+    <h2>Usage</h2>
+
+    <p>Just decide on your end condition, hit run, and watch the coins get flipped. Some possible end conditions include: until a certain number of flips, until a certain number of Heads or Tails, until you get a streak of a specific length (have you ever wanted to flip 20 heads in a row?). Within the while loops is a cin.get() that is commented out. Uncommenting out the cin.get() will cause you to need to hit enter between every coin flip which is useful if you want to track every flip. However, since this code is generally intended to be used to simulate large amount of coin flips that would be difficult to simulate in real life, it's generally reccomended to leave out the cin.get() so that the code will run until it reaches your end condition.</p>
+</body>
+
+</html>

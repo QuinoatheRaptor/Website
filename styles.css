@@ -1,0 +1,32 @@
+
+body {
+    margin-bottom: 150px;
+}
+h1 {
+    font-family: "Pirata One";
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-family: "Pirata One";
+    font-size: 30px;
+    display: flex;
+    justify-content: center; 
+}
+h3 {
+    font-family: "Pirata One";
+    font-size: 20px;
+    display: flex;
+    justify-content: center; 
+}
+p {
+    font-family: Lato;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+a:link,
+a:visited {
+    color: blue;
+}
