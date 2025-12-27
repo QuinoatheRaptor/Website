@@ -6,4 +6,36 @@
         <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     </head>
+    <body>
+    <h1>Elevator</h1>
+
+    <p>Simulates the decision making of an elevator as it tries to get everybody to the correct floor in the shortest amount of time.</p>
+
+    <h2>Features</h2>
+
+    <h3>Decision Making</h3>
+
+    <p>This elevator follows (what I assume to be) the logic of most standard elevators, which is to continue in one direction until no one else is trying to board or get off in that direction. If the elevator comes to a floor with someone waiting to go in the opposite direction that person is passed by until the elevator returns going in that direction.</p>
+
+    <br>
+
+    <p>The code models this using a system of "turnaround points". The elevator determines where the last person in it's current direction is and doesn't turn around until it reaches that point. This allows the elevator to not bounce around or get thrown off its path. More information about the turnaround points and elevator decision making is in the comments of the code</p>
+
+    <h3>Creating Orders</h3>
+
+    <p>Every "order", a call for the elevator, is a dictionary that holds all information about the order including where the person is waiting, which direction they want to go, and what floor they're trying to go to. True to real life the elevator doesn't interact with an order's end floor until that order has been picked up. The information stored in the orders is essential to the code deciding on its turnaround point.</p>
+
+    <h3>Stat tracking</h3>
+
+    <p>The orders also come with 'wait_time' and 'elevator_time' variables. These allow the code to keep track of how efficient the elevator is. It's not super useful currently but in the future I plan to use these stats to test other elevator algorithms (instead of the Turnaround Point Algorithm) and to test the most efficient algorithm with more than one elevator.</p>
+    <h2>A video showing the elevator at work</h2>
+    <video controls>
+            <source src="C:\Users\jqcfe\Videos\Screen Recordings\Screen Recording 2025-12-27 141214.mp4" type="video/mp4">
+            Your browser does not support this video.
+    </video>
+</body>
+
+    <footer>
+    <a href="index.html">Return to home page</a>
+</footer>
 </html>
